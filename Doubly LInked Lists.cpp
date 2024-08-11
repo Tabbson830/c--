@@ -4,7 +4,7 @@ using namespace std;
 class Fruit {
 public:
     string name;
-    Fruit* next = nullptr;
+    .
     Fruit* prev = nullptr;
     Fruit(string name) {
         this->name = name;

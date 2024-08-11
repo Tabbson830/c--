@@ -7,13 +7,15 @@ class Fruit{
     string name;
     double price;
     Fruit *next = NULL;
-    Fruit (string name, double price){
+    Fruit (string name, double price)
+    {
         this-> name = name;
         this-> price = price;
     }
 };
 
-int main(){
+int main()
+{
     Fruit *a = new Fruit ("Mango", 12.5);
     Fruit *b = new Fruit("Guava", 10.0);
     Fruit *c = new Fruit("Melon", 9.3);
@@ -32,10 +34,12 @@ int main(){
     //print list;
     Fruit *temp = e;
 
-    do {
+    do 
+    {
         cout << temp -> name<<"\t" <<"\n"<< temp -> price << endl;
         temp = temp->next;
     }
+    
     while (temp != NULL);
     return 0;
 };
