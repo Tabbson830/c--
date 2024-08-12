@@ -32,8 +32,8 @@ void printPreOrder(Fruit *head)
 void printPostOrder(Fruit *head)
 {
     if(head == NULL) return;    
-    printPreOrder(head->left); 
-    printPreOrder(head->right);   
+    printPostOrder(head->left); 
+    printPosttOrder(head->right);   
     cout << head -> name << endl;
 }
 
